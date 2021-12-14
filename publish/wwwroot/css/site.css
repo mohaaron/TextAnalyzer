@@ -1,0 +1,35 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.bar {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: left;
+    padding-left: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}

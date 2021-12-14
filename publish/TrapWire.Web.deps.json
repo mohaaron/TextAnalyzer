@@ -1,0 +1,37 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {},
+    ".NETCoreApp,Version=v6.0/win-x64": {
+      "TrapWire.Web/1.0.0": {
+        "dependencies": {
+          "TrapWire.TextAnalysis": "1.0.0"
+        },
+        "runtime": {
+          "TrapWire.Web.dll": {}
+        }
+      },
+      "TrapWire.TextAnalysis/1.0.0": {
+        "runtime": {
+          "TrapWire.TextAnalysis.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TrapWire.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TrapWire.TextAnalysis/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
