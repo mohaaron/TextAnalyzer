@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<script>
+    $(document).ready(function () {
+        $("#loadAnalysis").click(function () {
+            var text = $("textarea#enterText").val();
+            
+            $("#results").load(resolveBaseUrl("/Home/") + "GetTextAnalysis?text=" + encodeURIComponent(text));
+        });
+    });
+</script>
+
+<div class="text-center">
+    <h1 class="display-4">Text Analyzer</h1>
+</div>
+<div class="text-center">
+    <p>Enter the text that you would like to analyze and click the submit button. An analysis of the text will be generated using a bar graph.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col" style="text-align: right"><textarea id="enterText" rows="8" cols="50"></textarea></div>
+            <div class="col" style="text-align: left"><input id="loadAnalysis" type="button" value="Submit" /></div>
+        </div>
+        <div id="results"></div>
+    </div>
+</div>

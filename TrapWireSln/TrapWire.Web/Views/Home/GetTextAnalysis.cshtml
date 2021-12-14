@@ -1,0 +1,16 @@
+﻿@using TrapWire.TextAnalysis
+
+@model HashSet<CharacterResult>
+
+<div class="container" style="width: 50%">
+    <div class="row">
+        <div class="col">Character</div>
+    </div>
+    @foreach (CharacterResult result in Model)
+    {
+        <p>@result.Character</p>
+        <div class="bar">
+            <div class="skills" style="width: @result.Percentage%; background-color: #04AA6D;">@Math.Round(result.Percentage, 2)% (@result.Count)</div>
+        </div>
+    }
+</div>
